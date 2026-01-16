@@ -7,9 +7,9 @@ supported gcc version will be installed in `usr/
 sudo apt install gcc
 ```
 
-Update the version of compilers in the script in the folder `./esri`
+If updating libbacktrace to a newer version (commit), you have to update the short commit hash used to build the library in the script contained in the folder `./esri` 
 
-- llvm 19.1.2
+------
 
 Only needed for linux
 
@@ -20,4 +20,4 @@ cd esri
 ./build_linux.sh
 ```
 
-The final library with needed headers will be installed in `./esri/build`
+The final library with needed headers will be installed in `./esri/build` and it will be zipped in the same folder. You need to upload it to the shared zip network.
