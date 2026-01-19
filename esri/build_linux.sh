@@ -24,4 +24,7 @@ fi
 mkdir -p ./${libbacktrace_hash_commit}/lib/${arch}
 mv ./lib/libbacktrace.a ./${libbacktrace_hash_commit}/lib/${arch}
 mv ./include ./${libbacktrace_hash_commit}
-zip ./libbacktrace-${libbacktrace_hash_commit}.zip -r ./${libbacktrace_hash_commit}
+
+# build both x64 and arm64 architecture
+# manually zip them together and upload them onto the zip server
+echo "manually build x64 and arm64 and zip from esri/build/libbacktrace/${libbacktrace_hash_commit} into libbacktrace-${libbacktrace_hash_commit}.zip"
